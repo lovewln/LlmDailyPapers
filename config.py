@@ -3,6 +3,7 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
+import os
 
 # Authentication for user filing issue (must have read/write access to repository to add issue to)
 USERNAME = os.getenv('GITHUB_USERNAME')
@@ -16,7 +17,7 @@ REPO_NAME = 'LlmDailyPapers'
 NEW_SUB_URL = 'https://arxiv.org/list/cs/new'
 
 # Keywords to search
-KEYWORD_LIST = ["large language model", "llm", ]
+KEYWORD_LIST = ["large language model", "llm"]
 
 
 OPENAI_API_KEYS = [os.getenv('OPENAI_API_KEY')]
