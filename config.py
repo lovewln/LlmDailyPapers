@@ -17,7 +17,7 @@ REPO_NAME = 'LlmDailyPapers'
 NEW_SUB_URL = 'https://arxiv.org/list/cs/new'
 
 # Keywords to search
-KEYWORD_LIST = ["large language model"]
+KEYWORD_LIST = ["large language model", ]
 
 
 OPENAI_API_KEYS = [os.getenv('OPENAI_API_KEY')]
