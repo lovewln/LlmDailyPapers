@@ -78,6 +78,7 @@ class Reader:
             # 过滤不在时间范围内的论文
             if result.updated < self.filter_times_span[0] or result.updated > self.filter_times_span[1]:
                 continue 
+            print(filter_keys)
             abs_text = result.summary.replace('-\n', '-').replace('\n', ' ')
             meet_num = 0
             for f_key in filter_keys.split(" "):
